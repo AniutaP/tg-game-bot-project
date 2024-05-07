@@ -1,0 +1,14 @@
+session:
+  key: CaY5iCkYtN7DqXdiYK1BvmGrQuaSA4Tl4bEk9my0jc0=
+admin:
+  email: admin@admin.com
+  password: admin
+database:
+  host: localhost
+  port: 5432
+  user: anna
+  password: creator
+  database: TgBotAiohttp
+bot:
+  token: 7017641119:AAHJ1lK44FPSYEH6EwuMtUKBXww-mgcKIPk
+  group_id: 5249476880
