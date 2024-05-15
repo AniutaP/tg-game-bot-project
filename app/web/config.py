@@ -1,10 +1,15 @@
+import os
 import typing
 from dataclasses import dataclass
-
 import yaml
+from dotenv import load_dotenv
 
 if typing.TYPE_CHECKING:
     from app.web.app import Application
+
+
+load_dotenv()
+bot_token = os.getenv('bot_token')
 
 
 @dataclass
@@ -58,7 +63,7 @@ def setup_config(app: "Application", config_path: str):
             password=raw_config["admin"]["password"],
         ),
         bot=BotConfig(
-            token=raw_config["bot"]["token"],
+            token=bot_token,
             group_id=raw_config["bot"]["group_id"],
         ),
         database=DatabaseConfig(**raw_config["database"]),

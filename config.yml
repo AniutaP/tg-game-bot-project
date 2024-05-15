@@ -10,5 +10,5 @@ database:
   password: creator
   database: TgBotAiohttp
 bot:
-  token: 7017641119:AAHJ1lK44FPSYEH6EwuMtUKBXww-mgcKIPk
+  token: bot_token
   group_id: 5249476880
